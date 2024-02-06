@@ -1,19 +1,27 @@
-header {
-    background-color: solid white;
-    color: #6C7484;
-    padding: 1em;
-    text-align: center;
-}
-.tlogo{
-    width: 10%;
-    height: 10%;
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav.head{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.5em;
-    margin-right: 20px;
+.left-section,
+.middle-section,
+.right-section {
+    flex: 1;
+}
+
+.middle-section {
+    text-align: center;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.tlogo{
+    width: auto;
+    height: auto;
+    align-items: flex-start;
 }
 
 ul.head {
@@ -47,6 +55,7 @@ a {
     display: block;
     padding: 10px;
 }
+
 .downButton{
     border: px;
     border-color: orange;
@@ -55,7 +64,9 @@ a {
     padding: 10px 20px;
     text-align: center;
     border-radius: 25px;
+    align-items: flex-end;
 }
+
 button{
     background-color: #061447;
     color: #fff;
