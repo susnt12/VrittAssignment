@@ -54,26 +54,30 @@
         </div>
         
         <form action="/search" method="get" class="search-form"> 
-                <div class="search-group">
-                <label for="search"></label>
-                <input type="text" id="search" name="search" placeholder="Search Universities, Courses, and Countries">
-                <input type="submit" value="Search">  
+            <div class="search-group">
+                <div class="search-input">
+                    <label for="search"></label>
+                    <input type="text" id="search" name="search" placeholder="Search Universities, Courses, and Countries">
+                </div>
+                <div class="search-button">
+                    <input type="submit" value="Search">  
+                </div>
             </div>
-        
-            <label for="countries">Countries:</label>
+                
+            <label for="countries"></label>
             <select name="countries" id="countries">
-                <option value="">All</option>
-                <option value="United States">United States</option>
-                <option value="United Kingdom">United Kingdom</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Germany">Germany</option>
-                <option value="France">France</option>
+                    <option value="">Countries</option>
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
             </select>
-        
-            <label for="courses">Courses:</label>
+                
+            <label for="courses"></label>
             <select name="courses" id="courses">
-                <option value="">All</option>
+                <option value="">Courses</option>
                 <option value="Computer Science">Computer Science</option>
                 <option value="Business Administration">Business Administration</option>
                 <option value="Engineering">Engineering</option>
@@ -84,18 +88,21 @@
                 <option value="Environmental Science">Environmental Science</option>
                 <option value="Finance">Finance</option>
             </select>
-        
-            <label for="degree">Degree:</label>
-            <input type="text" name="degree" id="degree" placeholder="e.g., Bachelor, Master">
-        
-            <label for="duration">Duration:</label>
-            <input type="number" name="duration" id="duration" min="1" placeholder="e.g., 3 or 4">
-        
-            <label for="fees">Fees:</label>
-            <input type="number" name="fees" id="fees" min="0" placeholder="e.g., 10000">
-        
-            <label for="intake">Intake:</label>
-            <input type="month" name="intake" id="intake">
+
+            <label for="courses"></label>
+            <select name="courses" id="courses">
+               <option value="">Degree</option>
+            </select>   
+                    
+            <label for="courses"></label>
+            <select name="courses" id="courses">
+                    <option value="">Duration</option>
+            </select>
+                    
+            <label for="courses"></label>
+            <select name="courses" id="courses">
+                <option value="">Intake</option>
+            </select>   
         </form>
         
         <div class="sort-container">
